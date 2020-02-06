@@ -5,7 +5,7 @@
 #endif
 
 #ifdef COMPILING_DLL
-#define DLLEX __declspec(dllexport)
+#define DLLEXP __declspec(dllexport)
 #else
 #define DLLEXP
 #endif
