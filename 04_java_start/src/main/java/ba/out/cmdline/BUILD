@@ -4,5 +4,5 @@ java_binary(
     name = "Runner",
     srcs = ["Runner.java"],
     main_class = "ba.out.cmdline.Runner",
-    deps = ["//:ProjectRunner"],
+    deps = ["//:java_lib_04"],
 )
