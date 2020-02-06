@@ -1,14 +1,14 @@
 #define SYM  "symbol01"
 
-
-#ifdef COMPILING_DLL
-#define DLLEXPORT __declspec(dllexport)
-#else
-#define DLLEXPORT
+#ifdef _MSC_VER
+   #include <windows.h>
 #endif
 
-extern "C" DLLEXPORT char *get_time();
-extern "C" DLLEXPORT void say_hello(char *);
+#ifdef COMPILING_DLL
+#define DLLEX __declspec(dllexport)
+#else
+#define DLLEXP
+#endif
 
 
-extern "C" int get_number_plus_2(int number);
+extern "C" DLLEXP int get_number_plus_2(int number);
