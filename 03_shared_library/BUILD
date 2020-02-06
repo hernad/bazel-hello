@@ -34,7 +34,7 @@ cc_binary(
 
 # second will link to libzero.so
 cc_binary(
-  name = "main_shared",
+  name = "main_shared_linux",
   srcs = ["main.cc"],
   deps = [":zero"],
   linkstatic = 0,
