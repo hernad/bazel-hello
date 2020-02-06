@@ -44,6 +44,7 @@ cc_binary(
 cc_binary(
   name = "main_shared_windows",
   srcs = ["main.cc"],
+  copts = ["/DCOMPILING_DLL"],
   deps = [":zero_dll"],
   linkstatic = 0,
 )
