@@ -6,7 +6,10 @@ package(default_visibility = ["//visibility:public"])
 java_library(
     name = "java_lib_04",
     srcs = glob(["src/main/java/ba/out/*.java"]),
-    deps = ["@maven//:com_google_guava_guava"],
+    deps = [
+        "@maven//:com_google_guava_guava",
+        "@maven//:net_java_dev_jna_jna",
+    ],
 )
 
 java_binary(

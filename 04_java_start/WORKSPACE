@@ -17,6 +17,8 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 maven_install(
     artifacts = [
         "junit:junit:4.12",
+        #https://mvnrepository.com/artifact/net.java.dev.jna/jna
+        "net.java.dev.jna:jna:5.5.0",
         "com.google.guava:guava:28.0-jre",
     ],
     fetch_sources = True,
