@@ -7,29 +7,34 @@ output:
 
 <pre> 
 //src/main/java/ba/out/cmdline:Runner
-//:ProjectRunner
+//:java_greet
+//:java_lib_04
 Loading: 0 packages loaded
 </pre>
 
 
 run java:
 
-    bazel run :ProjectRunner
+    bazel run :java_greet
 
 
 output:
 
 <pre>
-INFO: Analyzed target //:ProjectRunner (0 packages loaded, 0 targets configured).
+INFO: Analyzed target //:java_greet (0 packages loaded, 1 target configured).
 INFO: Found 1 target...
-Target //:ProjectRunner up-to-date:
-  bazel-bin/ProjectRunner.jar
-  bazel-bin/ProjectRunner
-INFO: Elapsed time: 0.056s, Critical Path: 0.00s
-INFO: 0 processes.
-INFO: Build completed successfully, 1 total action
-INFO: Build completed successfully, 1 total action
+Target //:java_greet up-to-date:
+  bazel-bin/java_greet.jar
+  bazel-bin/java_greet
+INFO: Elapsed time: 0.122s, Critical Path: 0.05s
+INFO: 1 process: 1 worker.
+INFO: Build completed successfully, 5 total actions
+INFO: Build completed successfully, 5 total actions
+1
+0
+-1
 Hi from out.ba!
+is windows:false
 </pre>
 
 
@@ -45,10 +50,14 @@ INFO: Found 1 target...
 Target //src/main/java/ba/out/cmdline:Runner up-to-date:
   bazel-bin/src/main/java/ba/out/cmdline/Runner.jar
   bazel-bin/src/main/java/ba/out/cmdline/Runner
-INFO: Elapsed time: 0.068s, Critical Path: 0.00s
+INFO: Elapsed time: 0.043s, Critical Path: 0.00s
 INFO: 0 processes.
 INFO: Build completed successfully, 1 total action
 INFO: Build completed successfully, 1 total action
 =========Runner start========
+1
+0
+-1
 Hi from out.ba!
+is windows:false
 </pre>
