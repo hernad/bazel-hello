@@ -1,8 +1,8 @@
 load("@rules_java//java:defs.bzl", "java_binary")
 
 java_binary(
-    name = "runner",
+    name = "Runner",
     srcs = ["Runner.java"],
-    main_class = "com.example.cmdline.Runner",
-    deps = ["//:greeter"],
+    main_class = "ba.out.cmdline.Runner",
+    deps = ["//:ProjectRunner"],
 )
