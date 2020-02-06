@@ -42,3 +42,7 @@ bazel-out/k8-fastbuild/bin/two_plus_two
 bazel-out/k8-fastbuild/bin/_objs/library_zero/lib.pic.o
 -Wl,--end-lib
 </pre>
+
+
+`-fuse-ld=gold` - https://en.wikipedia.org/wiki/Gold_(linker)
+
