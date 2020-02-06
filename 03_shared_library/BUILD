@@ -16,7 +16,7 @@ cc_library(
 )
 
 windows_dll_library(
-    name = "zero_dll",
+    name = "zero_win",
     srcs = ["lib.cc"],
     hdrs = ["lib.h"],
     # Define COMPILING_DLL to export symbols during compiling the DLL.
@@ -45,7 +45,7 @@ cc_binary(
   name = "main_shared_windows",
   srcs = ["main.cc"],
   copts = ["/DCOMPILING_DLL"],
-  deps = [":zero_dll"],
+  deps = [":zero_win"],
   linkstatic = 0,
 )
 
