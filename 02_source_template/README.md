@@ -1,7 +1,8 @@
 build hello_world c binary:
 
-  bazel build :hello_world
+    bazel build :hello_world
 
+output:
 <pre>
 Starting local Bazel server and connecting to it...
 INFO: Analyzed target //:hello_world (13 packages loaded, 48 targets configured).
@@ -16,8 +17,9 @@ INFO: Build completed successfully, 7 total actions
 
 run binary:
 
-  bazel run :hello_world
+    bazel run :hello_world
 
+output:
 <pre>
 INFO: Analyzed target //:hello_world (0 packages loaded, 0 targets configured).
 INFO: Found 1 target...
