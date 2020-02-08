@@ -46,33 +46,11 @@ void create_vm(char* classname) {
     // /usr/lib/jvm/java-1.8.0-openjdk
     printf("JAVA_HOME=%s\n", cPath);
 
-    // Path to the java source code  
-    //int length = strlen(OPTION_CP) +
-    //             strlen(CUSTOM_LIB) + 
-    //             strlen(JNA_LIB) +
-    //             strlen(JNA_PLATFORM_LIB) +
-    //             strlen(CUSTOM_C_LIB) +
-    //             strlen(JAVA_LIB) +
-    //             strlen(JLI_LIB) +
-    //             strlen(SERVER_LIB) +
-    //             10;
-    //
     int length = strlen(cPath) + 100;
     
     options[0].optionString = new char[length];
     sprintf(options[0].optionString, "-Djava.class.path=%s:./libjava_lib.jar:.", cPath);
     
-    //
-    // strcpy(options.optionString, OPTION_CP);
-    // strcat(options.optionString, CUSTOM_LIB); strcat(options.optionString, SEP);
-    // strcat(options.optionString, JNA_LIB); strcat(options.optionString, SEP);
-    // strcat(options.optionString, JNA_PLATFORM_LIB); strcat(options.optionString, SEP);
-    // strcat(options.optionString, CUSTOM_C_LIB); strcat(options.optionString, SEP);
-    // strcat(options.optionString, JAVA_LIB); strcat(options.optionString, SEP);
-    // strcat(options.optionString, JLI_LIB); strcat(options.optionString, SEP);
-    // strcat(options.optionString, SERVER_LIB);
-    //sprintf(options.optionString, "-Djava.class.path=%s/jre/lib/rt.jar:./libjava_lib.jar:.", cPath);
-
     printf("------ create_vm class: %s ----------\n", classname);
 
 

@@ -1,12 +1,10 @@
-/* 
- * Origin: File:   MyJavaAPI_C.h Author: github/ericjbruno
- */
-
 #ifndef JAVACAPI_C_H
 #define JAVACAPI_C_H
 
-#include <iostream>
 #include "JNABootstrap.h"
+#include <iostream>
+#include <cstdlib>
+#include <unistd.h>
 
 using namespace std;
 

@@ -1,11 +1,4 @@
-
-#include <cstdlib>
-
-#include <cstdlib>
-#include <iostream>
 #include "JavaCAPI.h"
-
-#include <unistd.h>
 
 unsigned int microseconds = 1000000;
 
