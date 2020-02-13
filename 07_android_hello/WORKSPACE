@@ -19,7 +19,7 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 maven_install(
     artifacts = [
         "com.jakewharton.timber:timber:4.7.0",
-        "com.android.support:appcompat-v7:aar:27.1.1",
+        "com.android.support:appcompat-v7:27.1.1",
     ],
     repositories = [
         # Private repositories are supported through HTTP Basic auth
