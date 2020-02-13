@@ -8,8 +8,8 @@ android_binary(
     visibility = ["//visibility:public"],
     deps = [
         "//Lib-Android",
-	"@maven//:com_jakewharton_timber_timber",
-	"@maven//:com_android_support_appcompat_v7",
+	    "@maven//:com_jakewharton_timber_timber",
+	    "@maven//:com_android_support_appcompat_v7",
     ],
 )
 
