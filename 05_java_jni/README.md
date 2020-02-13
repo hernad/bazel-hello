@@ -46,3 +46,9 @@ logme_cb_func jstring The value from the callback was 11
 java callback reg_logme_func
 JAVA LOGME: The value from the callback was 11
 </pre>
+
+
+run main_java_capi:
+
+    bazel build :main_java_capi ; cd bazel-bin ; ./main_java_capi ; cd ..
+

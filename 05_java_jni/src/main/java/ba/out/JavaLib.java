@@ -1,17 +1,28 @@
 package ba.out;
 
 
-public class JavaLib implements JavaLibAPI {
-    private static  JavaLib INSTANCE = new JavaLib();
-    public static JavaLibAPI getAPI() { return INSTANCE; }
-    
-    ////////
+import com.sun.jna.Callback;
+import com.sun.jna.Native;
+import com.sun.jna.NativeLibrary;
 
+import ba.out.*;
+
+
+public class JavaLib implements JavaLibAPI {
+
+    private static JavaLib INSTANCE = new JavaLib();
+    public static JavaLibAPI getAPI() { 
+        return INSTANCE; 
+    }
+    
     public static void main(String[] args) {
+       System.out.println("==== running ba.out.JavaLib main() method ====");
+
     }
 
-    private JavaLib() { 
-        System.out.println("ba.out.JavaLib created ");
+    public JavaLib() { 
+        System.out.println("ba.out.JavaLib constructor START");
+
     }
     
     @Override
@@ -21,9 +32,10 @@ public class JavaLib implements JavaLibAPI {
         return ret;
     }
 
+    /*
     @Override
     public String getName() {
-        String ret = "testName";
+        String ret = "JavaLibTESTName";
         System.out.println("In JavaLib: getName(), return=" + ret);
         return ret;
     }
@@ -32,5 +44,6 @@ public class JavaLib implements JavaLibAPI {
     public void logme(String s) {
         System.out.println("JavaLib.logme: " + s);
     }
+    */
     
 }

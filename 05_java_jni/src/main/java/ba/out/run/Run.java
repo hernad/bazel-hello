@@ -84,11 +84,12 @@ public class Run {
 
 
     public Run() {
-        System.out.println("*** Run() constructor ****");
-        JavaCAPI.reg_calc_cb(reg_calc_func);
-        JavaCAPI.reg_getName_cb(reg_getName_func);
+        System.out.println("*** Run constructor ****");
+        //JavaCAPI.reg_calc_cb(reg_calc_func);
+        //JavaCAPI.reg_getName_cb(reg_getName_func);
+        //JavaCAPI.reg_logme_cb(reg_logme_func);
         
-        System.out.println("JavaCAPI callbacks registered");
+        //System.out.println("JavaCAPI callbacks registered");
     
     }
     
