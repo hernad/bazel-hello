@@ -7,6 +7,7 @@ platform(
           "@platforms//os:windows",
           "@bazel_tools//tools/cpp:clang-cl",
       ],
+)
 
 cc_binary(
     name = "hello_clang",
