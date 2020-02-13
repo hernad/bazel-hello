@@ -5,9 +5,9 @@ export ANDROID_HOME=$HOME/Android/Sdk
 
 # https://docs.bazel.build/versions/master/tutorial/android-app.html
 
-bazel build //App-A-Android:AppA-Android --subcommands
+bazel build //App-A-Android/src/main:main --subcommands
 
 
-bazel mobile-install //App-A-Android:AppA-Android 
+bazel mobile-install //App-A-Android/src/main:main
 
 
